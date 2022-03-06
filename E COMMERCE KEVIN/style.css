@@ -1,0 +1,416 @@
+*, ::before ,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+   
+}
+   
+body {
+    overflow-x: hidden;
+    background-color: rgb(212, 208, 208);
+    flex-direction: column;
+    display: flex;
+}
+
+/***** NAVIGATION RESPONSIVE *****/
+   
+.world {
+    transform: translate(0,160%);
+    font-size: 25px;
+    color: rgb(10, 10, 10);
+    margin-left: 10PX;
+position: absolute
+}
+
+
+   .navigation {
+        height: 90px;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        
+    
+}
+
+.liste-nav {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.item-nav {
+    transform: translate(0,35%);
+    display: inline-block;
+    line-height: 70px;
+    font-size: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.item-nav a {
+    text-decoration:  none;
+    color : #0c0b0b
+}
+
+
+.hamburger {
+    position: absolute;
+    top : 15px ;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.button img {
+    width: 40px;
+    
+}
+
+@media  screen and (max-width :  550px) {
+    .hamburger {
+        display: block;
+    }
+    nav {
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .liste-nav {
+        position: relative;
+        top:70px ;
+        display: none;
+    }
+    .item-nav {
+        display: block;
+        background: #333;
+        margin: 0;
+    }
+    .liste-nav.active-menu {
+        display: block;
+    }
+}
+
+
+/**** NAVIGATION RESPONSIVE ****/
+
+@media  screen and (min-width : 915px){
+    main {
+       
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+   
+    main section {
+        flex : 1;
+        min-width: 40%;
+        margin: 3px;
+        padding: 0px;
+        border: 1px solid rgb(255, 255, 255);
+
+    }
+}
+
+
+/* NAVBAR RESEAUX */
+
+
+.reseaux {
+transform: translate(245%,-20%);
+    position: absolute;
+}
+
+
+.item-nav1 {
+    display: inline-block;
+    line-height: 70px;
+    font-size: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.photo {
+    height: 15px;
+}
+
+.photo1 {
+    transform: translate(-20% ,25%);
+    height: 35px ;
+}
+
+.numero {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+/*  FIN NAVBAR RESEAUX */
+ 
+/* icones NAVBAR */
+
+.item-nav2 {
+    display: inline-block;
+    line-height: 70px;
+    font-size: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.icones{
+    transform: translate(137%,-80%);
+    height: 35px;
+    width: 50%;
+    
+}
+.icones11 {
+    transform: translate(20%,-60%);
+    height: 40px;
+}
+
+/*** FIN DE ICONES NAVBAR ***/
+
+/*** BANNIERE ***/
+
+.banniere {
+    height:400px;
+    width: 100%;
+    text-align: center;
+}
+/*** BANNIERE ***/
+
+/*** CARTES ****/
+.categories {
+    margin-left: 40%;
+    margin-top: 30px;
+    text-align: center;
+    border: solid #f1f1f1 ;
+    display: inline-block;
+
+}
+
+/*** RESPONSIVE DES IMG DU CORPS ***/
+
+.centrerimage p {
+    width: 100%;
+    height: 300px;
+    margin: 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+   
+
+}
+
+.centrerimage img  {
+    width: 100%;
+    height:200px;
+ }
+
+
+ @media screen and (max-width : 1650px) {
+    .centrerimage p {
+        width: 100%;
+        height: auto;
+        margin: 5px;
+        white-space : normal ;
+        flex-shrink: 0;
+       
+    }
+    }
+    
+    
+    .centrerimage img  {
+        width: 100%;
+        height:auto;
+     }
+    
+ /*** FIN DU RESPONSIVE DES IMG ***/
+
+ /**  SECTION RESPONSIVE  SECTION MAIN IMPORTANT POUR LES ITEM !! **/
+
+@media  screen and (min-width : 915px){
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+    main section {
+        flex : 1;
+        min-width: 0%;
+        margin: 3px;
+        padding: 0px;
+        border: 0px solid rgb(255, 255, 255);
+
+    }
+}
+
+/*** RESPONSIVE DES IMG DU CORPS ***/
+
+.centrerimage p {
+    width: 100%;
+    height: 300px;
+    margin: 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.centrerimage img  {
+    width: 100%;
+    height:500px;
+ }
+
+
+ @media screen and (max-width : 1650px) {
+    .centrerimage p {
+        width: 100%;
+        height: auto;
+        margin: 5px;
+        white-space : normal ;
+        flex-shrink: 0;
+       
+    }
+    }
+    
+    
+    .centrerimage img  {
+        transform: translate(-100%);
+        width:550%;
+        height:200px;
+        margin: 0px;
+     }
+     .centrerimage55 img  {
+        width: 100%;
+        height:200px;
+        margin: 0px;
+     }
+     .centrerimage1 img {
+         width: 100%;
+         height: 300px;
+         margin: 0px;
+     }
+
+     .carte-itemy {
+         width: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+         transform: translate(-15%,230%);
+     }
+    
+     .carte-item88 {
+         margin-right: 20px;
+         margin-left: 150px;
+        transform: translate(70%,20%);
+        
+    }
+    
+    
+     .carte-item {
+        height: 100px;
+     }
+
+
+     .redimensionerimg {
+         border: solid 20px #ffffff;
+         
+     }
+
+     main {
+        margin: 20px;
+         margin-left : 250px;
+     }
+
+     .titre {
+         transform: translate(-0%);
+         text-align: center;
+     }
+
+     .titrecat {
+         margin: 20px;
+         transform: translate(210%);
+         border: solid 5px #333;
+     }
+.featuredarrival {
+    transform: translate(45%,590%);
+}
+     .NEW {
+         height:30px;
+         color: #f1f1f1;
+         background: #000000;
+        border: solid 3px #333;
+         ;
+         transform: translate(-422%,825%);
+     }
+.para1 {
+    transform: translate(155%,290%)
+}
+     .para {
+         transform: translate(44%,900%);
+     }
+
+     .carte-itemy {
+        margin-left: 20px;
+        margin-right: 20px;
+         transform: translate(-15%,30%);
+     }
+
+     .carte2 {
+    width: 100%;
+       transform: translate(-5%,80%);
+         display: flex;
+     }
+     
+    .titreinfo {
+        text-align: center;
+    }
+
+    .x {
+    margin-left: -10px;
+    }
+
+    .headerbasdepage {
+        transform: translate(0%,52%);
+        width: 100%;
+        height: 400px;
+    }
+
+    .carte2 {
+    transform: translate(-10%,100%);
+    }
+
+    .carte-item44 {
+        height: 100px;
+        border: solid 3px rgb(230, 230, 230);
+        transform: translate(3%,180%);
+    }
+
+    .carte-item9  {
+        transform: translate(-20%,80%);
+    }
+
+    .carte-item66 {
+        transform: translate(32%,-80%);
+    }
+    .carte-item77 {
+        transform: translate(32%,-90%);
+    }
+    .featuredtitre {transform: translate(41%);
+
+    }
+
+    .carte-item88 {
+        transform: translate(70%,0%);
+    }
+    
+    .titre1 {
+      width: 400px;
+        text-align: center;
+        transform: translate(-80%);
+    }
+
+    .contact {
+        transform: translate(850%);
+        height: 30px;
+    }
+
+   
